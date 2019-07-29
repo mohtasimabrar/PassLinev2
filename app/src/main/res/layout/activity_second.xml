@@ -10,64 +10,71 @@
         android:id="@+id/nrzIButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NRZ-I"
-        android:layout_marginTop="40dp"
         android:layout_below="@id/bitOne"
-        android:layout_centerHorizontal="true"/>
+        android:layout_alignEnd="@+id/bitTwo"
+        android:layout_marginTop="45dp"
+        android:text="NRZ-I" />
 
     <Button
         android:id="@+id/nrzLButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NRZ-L"
-        android:layout_marginTop="25dp"
         android:layout_below="@id/nrzIButton"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="-57dp"
+        android:layout_toEndOf="@+id/bitThree"
+        android:text="NRZ-L" />
 
     <Button
         android:id="@+id/nrzUniButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NRZ-Uni"
-        android:layout_marginTop="25dp"
         android:layout_below="@id/nrzLButton"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignEnd="@+id/bitEight"
+        android:layout_marginTop="-49dp"
+        android:layout_marginEnd="12dp"
+        android:text="NRZ-Uni" />
 
     <Button
         android:id="@+id/mlt3Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MLT-3"
-        android:layout_marginTop="25dp"
         android:layout_below="@id/nrzUniButton"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignStart="@+id/nrzIButton"
+        android:layout_marginTop="54dp"
+        android:text="MLT-3" />
 
     <Button
         android:id="@+id/amiButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="AMI"
-        android:layout_marginTop="25dp"
         android:layout_below="@id/mlt3Button"
-        android:layout_centerHorizontal="true"/>
+        android:layout_alignEnd="@+id/nrzLButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-54dp"
+        android:layout_marginEnd="6dp"
+        android:onClick="amiDO"
+        android:text="AMI" />
 
     <Button
         android:id="@+id/manButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MAN"
-        android:layout_marginTop="25dp"
         android:layout_below="@id/amiButton"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginStart="-52dp"
+        android:layout_marginTop="-44dp"
+        android:layout_toEndOf="@+id/bitSeven"
+        android:text="MAN" />
 
     <Button
         android:id="@+id/dmanButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="D-Man"
-        android:layout_marginTop="25dp"
         android:layout_below="@id/manButton"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignStart="@+id/amiButton"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="48dp"
+        android:text="D-Man" />
     <ImageView
         android:id="@+id/bitOne"
         android:layout_width="40dp"
